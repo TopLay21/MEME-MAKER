@@ -1,0 +1,84 @@
+@import "reset.css";
+
+body {
+	display: flex;
+	gap: 20px;	
+	justify-content: space-between;
+	align-items: flex-start;
+	background-color: gainsboro;
+	padding: 20px;
+	font-family: system ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Canterell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+canvas {
+	width: 800px;
+	height: 800px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btns {
+	display: flex;
+	flex-direction: column;
+	gap:20px;
+}
+
+.color-options {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+}
+
+.color-option {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border:5px solid white;
+  transition: transform ease-in-out .1s;
+}
+
+.color-option:hover {
+	transform: scale(1.2);
+}
+
+input#color{
+	background-color: white;
+}
+
+button,
+label{
+	all:unset;
+	padding:10px 0px;
+	text-align: center;
+	background-color: royalblue;
+	color:white;
+	font-weight: 500;
+	cursor:pointer;
+	border-radius:10px;
+	transition: opacity linear .1s;
+}
+
+button:hover {
+	opacity: 0.85;
+}
+
+input#file{
+	display: none;
+}
+
+input#text {
+	all:unset;
+	padding: 10px 0px;
+	border-radius: 10px;
+	font-weight: 500;
+	text-align: center;
+	background-color: white;
+}
